@@ -1,0 +1,35 @@
+.dados-paciente {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+   
+}
+
+.buttons-report {
+    display: flex;
+    color: #083f26;
+    justify-content: flex-end;
+    margin-right: 3%;
+    align-items: center;
+}
+
+.card-report {
+    width: 160px;
+    margin: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 240px;
+    background-color: white;
+    position: relative;
+}
+
+.sintoma_report {
+    background-color: #EFF6FF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 12px;
+    font-weight: 300;
+    align-items: center;
+    border-radius: 4px;
+    padding: 5px;
+}

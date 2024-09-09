@@ -1,0 +1,276 @@
+.dashboard-container {
+  display: flex;
+  height: 100vh; 
+  position: relative;
+  overflow: hidden; 
+}
+
+.aside {
+  width: 20%; 
+  background-color: #083f26;
+  color: white;
+  position: fixed; 
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: calc(200px + 10px); 
+  width: calc(100% - 200px - 20px);
+  height: 60px;
+  z-index: 1000;
+  overflow: visible; 
+}
+
+
+.main-content {
+  padding-top: 60px; 
+}
+.background-container {
+  background-image: url('../imagens/passadicos.jpg'); 
+  background-size: cover;
+  background-position: center;
+  height: 100%; 
+  width: 100%; 
+  position: absolute;
+  top: 0; 
+  left: calc(200px + 11px); 
+  color: white;
+  overflow: hidden; 
+}
+
+.main-content > .content-area {
+  margin-top: 60px; 
+  padding: 20px;
+  flex-grow: 1;
+  overflow-y: auto; 
+}
+
+
+.content_cardsDashboard {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px; 
+}
+.cardsDashboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  width: 100%;
+  max-width: 320px;
+  height: 160px;
+  border-radius: 20px;
+  background-color: white;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card-1 {
+  border: 1px solid #84744c;
+}
+.card-1 h3 {
+  color: #84744c;
+}
+
+.card-2 {
+  border: 1px solid #083f26;
+}
+.card-2 h3 {
+  color: #083f26;
+}
+
+.card-3 {
+  border: 1px solid #0e683f;    
+}
+.card-3 h3 {
+  color: #0e683f;
+}
+
+.cardsDashboard h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.cardsDashboard p {
+  font-size: 32px;
+  font-weight: 400;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  height: 40px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: inherit;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.card-footer p {
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  margin: 0;
+}
+
+.card-footer-1 {
+  background-color: #84744c;
+}
+
+.card-footer-2 {
+  background-color: #083f26;
+}
+
+.card-footer-3 {
+  background-color: #0e683f;
+}
+
+.content-consultas-tabela {
+  justify-content: space-between;
+  width: 100%;
+}
+
+.content-consultas-tabela h1 {
+  text-align: left;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 3vh;
+  margin-top: 10vh;
+}
+
+.tabela_consultas {
+  display: flex;
+  width: 100%;
+  max-width: 1280px;
+}
+
+.tabela_consultas p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.horas {
+  width: 180px;
+  height: 70px;
+  align-items: center;
+  text-align: right;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #8FC8FF;
+  border-radius: 20px;
+  margin: 5px;
+}
+
+.nomes {
+  width: calc(100% - 190px); 
+  height: 70px;
+  align-items: center;
+  text-align: left;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #8FC8FF;
+  border-radius: 20px;
+  margin: 5px;
+  cursor: pointer;    
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: white; }
+}
+
+.typing-effect {
+  font-size: 3em;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.15em solid white; 
+  width: fit-content; 
+  animation:
+      typing 3.5s steps(45, end) forwards, 
+      blink-caret 0.75s step-end infinite; 
+}
+
+.typing-effect.typing-done {
+  border-right: none; 
+  animation: none; 
+}
+
+.ellipse-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px; 
+  position: absolute;
+  top: 50%; 
+  left: 40%; 
+  transform: translate(-50%, -50%); 
+}
+
+.ellipse {
+  width: 150px;
+  height: 150px;
+  border: 5px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  position: relative;
+  transition: background-color 0.3s, color 0.3s; 
+}
+
+.icon-home {
+  font-size: 4em;
+  transition: color 0.3s; 
+}
+
+.ellipse:hover {
+  background-color: white; 
+  color: #083f26; 
+}
+
+.ellipse:hover .icon-home {
+  color: #083f26; 
+}
+
+.ellipse p {
+  margin-top: 10px;
+  font-size: 1.8em;
+  color: white;
+  position: absolute;
+  top: 150px; 
+  width: 100%;
+  text-align: center;
+}
+
+
+

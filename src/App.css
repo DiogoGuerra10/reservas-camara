@@ -1,0 +1,80 @@
+/* App.css */
+
+.app-container {
+  display: flex;
+  height: 100vh; /* Altura da viewport */
+  overflow: hidden; /* Impede o scroll da página */
+}
+
+.aside {
+  width: 10vw; /* Largura do aside */
+  background-color: #f4f4f4; /* Cor de fundo do aside */
+  padding: 20px; /* Espaçamento interno */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Sombra para o aside */
+  overflow-y: auto; /* Permite scroll interno no aside, se necessário */
+}
+
+.main-content {
+  flex: 1; /* Ocupa o espaço restante */
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  flex-shrink: 0; /* Impede a navbar de encolher */
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adicione uma sombra para a navbar */
+}
+
+.navbar-logo {
+  height: 50px;
+}
+
+.navbar-user {
+  position: relative;
+}
+
+.navbar-user-info {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.navbar-user-email {
+  cursor: pointer;
+  margin-right: 10px;
+  color: #09492c;
+}
+
+.navbar-logout-button {
+  display: none; /* Oculta o botão por padrão */
+  position: absolute;
+  top: 30px; /* Ajuste para posicionar abaixo do email */
+  left: 50%; /* Posiciona no meio horizontalmente */
+  transform: translateX(-50%); /* Centraliza o botão horizontalmente */
+  background-color: #fff; 
+  color: black;
+  border: 1px solid #09492c;
+  padding: 5px 10px;
+  cursor: pointer;
+  z-index: 10; /* Garante que o botão apareça acima de outros elementos */
+}
+
+.navbar-logout-button:hover {
+  background-color: #09492c;
+  color: #fff;
+}
+
+.navbar-user-info.show-logout .navbar-logout-button {
+  display: block; /* Exibe o botão quando a classe show-logout está presente */
+}
+
+.content {
+  flex: 1; /* Ocupa o espaço restante */
+  padding: 20px; /* Espaçamento interno */
+  overflow-y: auto; /* Permite scroll interno no conteúdo, se necessário */
+}

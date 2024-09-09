@@ -1,0 +1,43 @@
+.navbar {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  margin: 0;
+  padding: 10px 20px; /* Adicione um pouco de padding para melhor espaçamento */
+  position: fixed; /* Fixe a navbar no topo da página */
+  top: 0; /* Fixe a navbar na parte superior */
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Garante que a navbar fique acima de outros elementos */
+}
+
+.navbar h2 {
+  margin: 0;
+}
+
+.navbar-user {
+  position: relative;
+  cursor: default;
+  margin: 0;
+}
+
+.navbar-user-info {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-user-name {
+  color: #083f26;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  margin-right: 220px;
+}
+
+.navbar-user-email {
+  margin-right: 10px;
+  color: #09492c;
+  cursor: default !important;
+}

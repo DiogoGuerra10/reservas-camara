@@ -1,0 +1,61 @@
+/* css/Sidebar.css */
+.aside {
+    height: 100vh;
+    min-width: 15%;
+    top: 0;
+    left: 0;
+    background-color: #083f26 !important;
+    color: white; /* Cor do texto desejada */
+    display: flex;
+    flex-direction: column;
+    
+    box-sizing: border-box;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.logo {
+    max-height: 150px;
+    max-width: 100%;
+    margin-bottom: 50%;
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    margin: 1em 0;
+    text-decoration: none;
+    color: white; 
+    cursor: pointer;
+}
+
+.icon {
+    margin-right: 10px;
+    color: white;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.app-btn {
+    margin-top: auto;
+}
+
+.logout {
+    margin-top: auto;
+    margin-bottom: 2em;
+}
